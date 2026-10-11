@@ -1,0 +1,14 @@
+[
+    { "numeroCuenta": 1, "titular": "Ignacio Sanchez", "tipo": "Caja de Ahorro", "saldo": 150000, "activa": true },
+    { "numeroCuenta": 2, "titular": "Maria Becerra", "tipo": "Cuenta Corriente", "saldo": 85000, "activa": true },
+    { "numeroCuenta": 3, "titular": "Marcos Acuña", "tipo": "Caja de Ahorro", "saldo": 320000, "activa": true },
+    { "numeroCuenta": 4, "titular": "Esteban Quito", "tipo": "Cuenta Corriente", "saldo": 12000, "activa": false },
+    { "numeroCuenta": 5, "titular": "Luciana Lopilato", "tipo": "Caja de Ahorro", "saldo": 650000, "activa": true },
+    { "numeroCuenta": 6, "titular": "Juan Roman Riquelme", "tipo": "Cuenta Corriente", "saldo": 1250000, "activa": true },
+    { "numeroCuenta": 7, "titular": "Tini Stoessel", "tipo": "Caja de Ahorro", "saldo": 8900, "activa": false },
+    { "numeroCuenta": 8, "titular": "Franco Colapinto", "tipo": "Cuenta Corriente", "saldo": 3500000, "activa": true },
+    { "numeroCuenta": 9, "titular": "Lali Esposito", "tipo": "Caja de Ahorro", "saldo": 450000, "activa": true },
+    { "numeroCuenta": 10, "titular": "Emilia Mernes", "tipo": "Cuenta Corriente", "saldo": 52000, "activa": true },
+    { "numeroCuenta": 11, "titular": "Bizarrap", "tipo": "Caja de Ahorro", "saldo": 8900000, "activa": true },
+    { "numeroCuenta": 12, "titular": "Susana Gimenez", "tipo": "Cuenta Corriente", "saldo": 0, "activa": false }
+]

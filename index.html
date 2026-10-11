@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Banking - Panel de Gestión Final</title>
+    <link rel="icon" type="image/jpeg" href="assets/watermarked_img_297727153788706101.jpg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer src="js/CuentaBancaria.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <button id="btn-theme" class="btn-theme-toggle">🌙 Modo Noche</button>
+        <h1>Sistema de Gestión Bancaria</h1>
+        <p>Panel interactivo de administración de cuentas y transacciones</p>
+    </header>
+
+    <main class="contenedor-principal">
+        <section class="card formulario-seccion">
+            <h2>Registrar Nueva Cuenta</h2>
+            <form id="form-cuenta">
+                <div class="grupo-input">
+                    <label for="input-titular">Titular:</label>
+                    <input type="text" id="input-titular" placeholder="Ej: Lionel Messi" required>
+                </div>
+                <div class="grupo-input">
+                    <label for="select-tipo">Tipo de Cuenta:</label>
+                    <select id="select-tipo">
+                        <option value="Caja de Ahorro">Caja de Ahorro</option>
+                        <option value="Cuenta Corriente">Cuenta Corriente</option>
+                    </select>
+                </div>
+                <div class="grupo-input">
+                    <label for="input-saldo">Saldo Inicial ($):</label>
+                    <input type="number" id="input-saldo" placeholder="Ej: 50000" min="0" step="0.01" required>
+                </div>
+                <button type="submit" id="btn-crear" class="btn btn-primary">+ Crear Cuenta</button>
+            </form>
+        </section>
+
+        <section class="card busqueda-seccion">
+            <h2>Buscador y Filtros en Tiempo Real</h2>
+            <div class="grupo-input">
+                <input type="text" id="input-busqueda" placeholder="Buscar por nombre de titular...">
+            </div>
+            <div class="botonera-filtros" style="margin-top: 1rem;">
+                <button id="btn-todas" class="btn btn-filtro">Todas</button>
+                <button id="btn-corrientes" class="btn btn-filtro">Corrientes</button>
+                <button id="btn-ahorro" class="btn btn-filtro">Ahorro</button>
+                <button id="btn-activas" class="btn btn-filtro">Activas</button>
+                <button id="btn-inactivas" class="btn btn-filtro">Inactivas</button>
+                <button id="btn-reset" class="btn btn-danger" style="margin-left: auto;">Restablecer Sistema</button>
+            </div>
+        </section>
+
+        <section class="listado-seccion">
+            <h2>Cuentas Registradas</h2>
+            <div class="resumen-banco">
+                <span>Patrimonio Total Custodiado: </span>
+                <strong id="total-reservas">$0.00</strong>
+            </div>
+            <div id="contenedor-items" class="grid-cuentas"></div>
+        </section>
+    </main>
+
+    <!-- Modal Dinámico para Operaciones -->
+    <div id="modal-operacion" class="modal oculto">
+        <div class="modal-contenido card">
+            <h2 id="modal-titulo">Operar Cuenta</h2>
+            <p id="modal-saldo-actual" style="margin-bottom: 1rem; font-weight: 600; color: #15803d;"></p>
+            <div class="grupo-input">
+                <label for="input-monto">Monto de la transacción ($):</label>
+                <input type="number" id="input-monto" placeholder="Ingrese el monto" min="0.01" step="0.01">
+            </div>
+            <div class="botonera-modal">
+                <button id="btn-depositar" class="btn btn-primary">Depositar</button>
+                <button id="btn-extraer" class="btn btn-peligro">Extraer</button>
+                <button id="btn-cancelar" class="btn btn-filtro">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
