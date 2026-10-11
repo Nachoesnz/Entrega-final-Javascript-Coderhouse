@@ -14,14 +14,12 @@
 
 ## 👋 ¡Hola! Soy Ignacio
 Este es el repositorio de mi **Proyecto Final**, armando mi portfolio paso a paso. El simulador permite administrar cuentas, ver el patrimonio total del banco, filtrar clientes, registrar cuentas nuevas y realizar transacciones en vivo.
-<<<<<<< HEAD
 
 =======
 <img width="2525" height="147" alt="Captura" src="https://github.com/user-attachments/assets/587da9f9-b642-4fd6-be88-e3029b151baf" />
 <img width="2524" height="729" alt="Captura2" src="https://github.com/user-attachments/assets/138612f2-e134-43fc-a0fa-52780d689bd2" />
 <img width="2524" height="1224" alt="Captura3" src="https://github.com/user-attachments/assets/477a9c0f-57eb-4a4a-b504-d8bbd769ab2d" />
 *(🖼️ Espacio ideal: Arrastrá y soltá acá una captura de pantalla de tu página web para que se vea en el README)*
->>>>>>> 2ac95f91b52ac5b5b93dd25eb13835b2be7796b1
 
 ## ✨ Novedades de la Versión Final
 
