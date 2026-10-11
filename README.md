@@ -15,7 +15,6 @@
 ## 👋 ¡Hola! Soy Ignacio
 Este es el repositorio de mi **Proyecto Final**, armando mi portfolio paso a paso. El simulador permite administrar cuentas, ver el patrimonio total del banco, filtrar clientes, registrar cuentas nuevas y realizar transacciones en vivo.
 
-*(🖼️ Espacio ideal: Arrastrá y soltá acá una captura de pantalla de tu página web para que se vea en el README)*
 
 ## ✨ Novedades de la Versión Final
 
